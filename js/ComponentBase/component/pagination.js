@@ -138,4 +138,4 @@ defineClass(function pagination() {
         this.onPageChanged = config.onPageChanged || this.onPageChanged;
     },
 
-}).extend(Component, true).create().bindToJQuery("pagination");
+}).extend(ComponentBase, true).create().bindToJQuery("pagination");

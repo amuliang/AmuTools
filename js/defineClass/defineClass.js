@@ -170,4 +170,4 @@
     return defineClass;
 })();
 
-if(module) module.exports = defineClass;
+if(typeof module != "undefined") module.exports = defineClass;

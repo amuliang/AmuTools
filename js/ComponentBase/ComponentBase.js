@@ -14,7 +14,7 @@ var ComponentBase = defineClass(function ComponentBase() {
     bind: function () { },
 
 }).staticProps({
-    bindToJQuery: function (name) { // 这里提供一个name参数，因为在ie中无法自己读取到函数名称
+    bindToJQuery: function (name, info) { // 这里提供一个name参数，因为在ie中无法自己读取到函数名称
         // 辅助变量
         var constructor = this;
         var NAME = name || constructor.name;
@@ -42,6 +42,8 @@ var ComponentBase = defineClass(function ComponentBase() {
                 }
             });
         }
+        _jQueryInterface.info = info;
+
         _jQueryInterface.constructor = constructor; // constructor
         _jQueryInterface.noConflict = function () { // noConflict
             $.fn[NAME] = JQUERY_NO_CONFLICT;
