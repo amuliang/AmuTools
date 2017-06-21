@@ -1,11 +1,23 @@
 {
-  "name": "defineClass",
+  "name": "defineclass",
   "version": "1.0.0",
-  "description": "",
+  "description": "You can create class and inherit class",
   "main": "defineClass.js",
   "scripts": {
     "start": "NODE_PATH=lib node index.js"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "amuliang",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amuliang/AmuTools.git"
+  },
+  "keywords": [
+    "define",
+    "class"
+  ],
+  "bugs": {
+    "url": "https://github.com/amuliang/AmuTools/issues"
+  },
+  "homepage": "https://github.com/amuliang/AmuTools#readme"
 }
