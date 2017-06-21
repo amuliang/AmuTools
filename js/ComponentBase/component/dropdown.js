@@ -49,6 +49,9 @@ defineClass(function dropdown() {
             new_option.value = data[i].value;
             $control.append(new_option);
         }
+    },
+    getSelectedValue: function(control) {
+        return control.options[control.selectedIndex].value;
     }
 }).extend(ComponentBase, true).create().bindToJQuery("dropdown", {
     developers: [ // 开发者名单
@@ -60,7 +63,8 @@ defineClass(function dropdown() {
     },
     events: {
         taggleByValue: "value 切换当前选项为值为value的选项",
-        setData: "data 设置初始化数据"
+        setData: "data 设置初始化数据",
+        getSelectedValue: "获取当前选项的value"
     },
     css_annotation: "",
     description: "" // 描述

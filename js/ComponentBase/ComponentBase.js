@@ -24,7 +24,7 @@ var ComponentBase = defineClass(function ComponentBase() {
         var JQUERY_NO_CONFLICT = $.fn[NAME]; // 为了防止和jquery的同名属性冲突
         // 创建接口
         function _jQueryInterface(key, value) {
-            return this.each(function () {
+            return this.map(function () {
                 var $element = $(this);
                 var data = $element.data(DATA_KEY);
                 // 如果组件还未被绑定则新建组件类
@@ -38,9 +38,11 @@ var ComponentBase = defineClass(function ComponentBase() {
                     key = "reset";
                 }
                 if (typeof data[key] == "function") {
-                    data[key](this, value);
+                    var result = data[key](this, value);
+                    if(typeof result == "undefined") return this;
+                    else return result;
                 } else {
-                    console.log("不包含命令" + key);
+                    throw new Error("不包含命令" + key);
                 }
             });
         }
