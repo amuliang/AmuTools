@@ -1,0 +1,11 @@
+{
+  "name": "modelBase",
+  "version": "1.0.0",
+  "description": "",
+  "main": "modelBase.js",
+  "scripts": {
+    "start": "NODE_PATH=lib node index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

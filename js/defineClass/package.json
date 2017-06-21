@@ -1,0 +1,11 @@
+{
+  "name": "defineClass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "defineClass.js",
+  "scripts": {
+    "start": "NODE_PATH=lib node index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
