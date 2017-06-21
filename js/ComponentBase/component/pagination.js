@@ -1,6 +1,9 @@
 /*************************************************************************************************************
     pagination 分页
 */
+
+AmuTools.checkEnv(["defineClass", "ComponentBase", "Stater"]);
+
 defineClass(function pagination() {
     this.__init__();
 

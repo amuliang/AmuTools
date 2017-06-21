@@ -11,6 +11,8 @@
     });
 */
 
+AmuTools.checkEnv(["defineClass", "ComponentBase"]);
+
 defineClass(function dropdown() {
     this.__init__();
 }).props({
@@ -50,15 +52,15 @@ defineClass(function dropdown() {
     }
 }).extend(ComponentBase, true).create().bindToJQuery("dropdown", {
     developers: [ // 开发者名单
-        developer_amuliang
+        { name: "amuliang", email: "982632988@qq.com" }
     ],
     config: {
-        data: [], // 初始化数据
+        data: [{name:"option1", value: 1}], // 初始化数据
         onchange: function(control) {} // 选项改变事件
     },
     events: {
         taggleByValue: "value 切换当前选项为值为value的选项",
-        setData: "设置初始化数据"
+        setData: "data 设置初始化数据"
     },
     css_annotation: "",
     description: "" // 描述

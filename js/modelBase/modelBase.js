@@ -1,5 +1,6 @@
 const defineClass = require("defineClass");
 
+AmuTools.checkEnv(["defineClass"]);
 /***************model基类*****************************************************/
 const ModelBase = defineClass(function ModelBase() {
     this.__init__();

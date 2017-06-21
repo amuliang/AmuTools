@@ -7,6 +7,8 @@
 
         $.fn.componentName2 = $.fn.componentName.noConflict();
 */
+AmuTools.checkEnv(["defineClass"]);
+
 var ComponentBase = defineClass(function ComponentBase() {
     this.__init__();
 
