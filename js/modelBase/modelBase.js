@@ -1,6 +1,5 @@
-const defineClass = require("defineClass");
-
-AmuTools.checkEnv(["defineClass"]);
+define(["@defineClass"], function(defineClass) {
+/*************************************************************************************************************/
 /***************model基类*****************************************************/
 const ModelBase = defineClass(function ModelBase() {
     this.__init__();
@@ -111,7 +110,9 @@ const ModelColumn = defineClass(function ModelColumn(data) {
 }).create();
 
 
-module.exports = {
+return {
     ModelBase: ModelBase,
     ModelColumn: ModelColumn
 }
+/*************************************************************************************************************/  
+});

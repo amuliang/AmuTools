@@ -1,8 +1,6 @@
-const defineClass = require("defineClass");
-const { ModelBase, ModelColumn } = require("modelBase");
-
-
-
+define(["@defineClass", "@ModelBase"], function(defineClass, base) {
+/*************************************************************************************************************/
+const { ModelBase, ModelColumn } = base;
 /************** 常用字段类,必须继承ModelColumn **************************************************************/
 const StringColumn = defineClass(function StringColumn(name, size) {
     this.name = name;
@@ -57,16 +55,5 @@ if(result.error) console.log(result.error);
 else user.Phone = result.value;
 
 console.log(JSON.stringify(user));
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*************************************************************************************************************/  
+});

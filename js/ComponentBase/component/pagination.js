@@ -2,8 +2,8 @@
     pagination 分页
 */
 
-AmuTools.checkEnv(["defineClass", "ComponentBase", "Stater"]);
-
+define(["jquery", "@defineClass", "@ComponentBase"], function($, defineClass, ComponentBase) {
+/*************************************************************************************************************/
 defineClass(function pagination() {
     this.__init__();
 
@@ -141,4 +141,22 @@ defineClass(function pagination() {
         this.onPageChanged = config.onPageChanged || this.onPageChanged;
     },
 
-}).extend(ComponentBase, true).create().bindToJQuery("pagination");
+}).extend(ComponentBase, true).create().bindToJQuery("pagination", {
+    developers: [ // 开发者名单
+        { name: "amuliang", email: "982632988@qq.com" }
+    ],
+    config: {
+        rowCount: 0, // 总共多少条数据
+        currentPageIndex: 1, // 当前到了第页
+        showNum: 10, // 每页显示多少条数据
+        firstEventable: true, // 初始化后第一次响应事件是否执行
+        onPageChanged: function (pageIndex, showNum) { }
+    },
+    events: {
+    },
+    css_annotation: "pagination{ page-first, page-prev, page-index, page-next, page-last }",
+    description: "" // 描述
+        + "分页插件" + "\n"
+});
+/*************************************************************************************************************/  
+});

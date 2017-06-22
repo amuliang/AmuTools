@@ -7,9 +7,9 @@
 
         $.fn.componentName2 = $.fn.componentName.noConflict();
 */
-AmuTools.checkEnv(["defineClass"]);
-
-var ComponentBase = defineClass(function ComponentBase() {
+define(["jquery", "@defineClass"], function($, defineClass) {
+/*************************************************************************************************************/
+return defineClass(function ComponentBase() {
     this.__init__();
 
 }).protoProps({
@@ -58,3 +58,5 @@ var ComponentBase = defineClass(function ComponentBase() {
     }
 
 }).create();
+/*************************************************************************************************************/  
+});

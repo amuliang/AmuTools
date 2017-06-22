@@ -11,8 +11,8 @@
     });
 */
 
-AmuTools.checkEnv(["defineClass", "ComponentBase"]);
-
+define(["jquery", "@defineClass", "@ComponentBase"], function($, defineClass, ComponentBase) {
+/*************************************************************************************************************/
 defineClass(function dropdown() {
     this.__init__();
 }).props({
@@ -69,4 +69,6 @@ defineClass(function dropdown() {
     css_annotation: "",
     description: "" // 描述
         + "下拉选项插件" + "\n"
+});
+/*************************************************************************************************************/  
 });

@@ -5,7 +5,9 @@
         data.name = "xixi";
     });
 */
-var Stater = defineClass(function Stater(data) {
+define(["@defineClass"], function(defineClass) {
+/*************************************************************************************************************/
+return defineClass(function Stater(data) {
     this.__init__();
     if (typeof data == "object") this.data = data;
 
@@ -37,3 +39,5 @@ var Stater = defineClass(function Stater(data) {
     }
 
 }).create();
+/*************************************************************************************************************/  
+});
