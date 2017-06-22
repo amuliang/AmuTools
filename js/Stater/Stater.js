@@ -5,7 +5,7 @@
         data.name = "xixi";
     });
 */
-define(["@defineClass"], function(defineClass) {
+define(["@defineClass/defineClass"], function(defineClass) {
 /*************************************************************************************************************/
 return defineClass(function Stater(data) {
     this.__init__();

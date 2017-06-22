@@ -6,7 +6,12 @@ require(["require.config.paths"], function() {
     require(["app"]);
 });
 
-define("app", ["jquery", "@defineClass", "@NodeTree"], function($, defineClass, Node) {
+define("app", [
+    "jquery", 
+    "@defineClass/defineClass", 
+    "@NodeTree/NodeTree", 
+    "@ComponentBase/component/dropdown"
+], function($, defineClass, Node) {
     var node = new Node("father");
     var child1 = new Node("son");
     node.add(child1);

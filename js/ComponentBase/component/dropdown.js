@@ -11,7 +11,7 @@
     });
 */
 
-define(["jquery", "@defineClass", "@ComponentBase"], function($, defineClass, ComponentBase) {
+define(["jquery", "@defineClass/defineClass", "@ComponentBase/ComponentBase"], function($, defineClass, ComponentBase) {
 /*************************************************************************************************************/
 defineClass(function dropdown() {
     this.__init__();

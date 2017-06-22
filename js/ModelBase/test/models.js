@@ -1,4 +1,4 @@
-define(["@defineClass", "@ModelBase"], function(defineClass, base) {
+define(["@defineClass/defineClass", "@ModelBase/ModelBase"], function(defineClass, base) {
 /*************************************************************************************************************/
 const { ModelBase, ModelColumn } = base;
 /************** 常用字段类,必须继承ModelColumn **************************************************************/

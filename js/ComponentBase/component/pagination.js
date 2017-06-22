@@ -2,7 +2,7 @@
     pagination 分页
 */
 
-define(["jquery", "@defineClass", "@ComponentBase"], function($, defineClass, ComponentBase) {
+define(["jquery", "@defineClass/defineClass", "@ComponentBase/ComponentBase"], function($, defineClass, ComponentBase) {
 /*************************************************************************************************************/
 defineClass(function pagination() {
     this.__init__();

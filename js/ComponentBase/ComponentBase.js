@@ -7,7 +7,7 @@
 
         $.fn.componentName2 = $.fn.componentName.noConflict();
 */
-define(["jquery", "@defineClass"], function($, defineClass) {
+define(["jquery", "@defineClass/defineClass"], function($, defineClass) {
 /*************************************************************************************************************/
 return defineClass(function ComponentBase() {
     this.__init__();
