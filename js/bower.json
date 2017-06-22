@@ -1,0 +1,9 @@
+{
+  "name": "app-name",
+  "version": "0.0.1",
+  "dependencies": {
+    "jquery": "~3.2.1",
+    "requirejs": "~2.3.3"
+  },
+  "private": true
+}  
