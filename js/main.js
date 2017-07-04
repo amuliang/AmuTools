@@ -6,7 +6,8 @@ require(["require.config.paths"], function() {
     require(["app"]);
 });
 
-define("app", ["jquery", "ComponentBase/component/dropdown"], function($, dropdown) {
+define("app", ["jquery", "ComponentBase/ComponentBase"], function($, ComponentBase) {
+    console.log(ComponentBase);
     // $("#dd").dropdown({
     //     data: [
     //         { name: "name1", value: 1 },

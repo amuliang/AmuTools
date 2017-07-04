@@ -7,9 +7,11 @@
 
         $.fn.componentName2 = $.fn.componentName.noConflict();
 */
-define(["jquery", "@defineClass/defineClass"], function($, defineClass) {
+var $ = require("jquery");
+var defineClass = require(global.__amu_require__.rootUrl + "defineClass/defineClass");
+//define(["jquery", "@defineClass/defineClass"], function($, defineClass) {
 /*************************************************************************************************************/
-return defineClass(function ComponentBase() {
+module.exports = defineClass(function ComponentBase() {
     this.__init__();
 
 }).protoProps({
@@ -58,5 +60,6 @@ return defineClass(function ComponentBase() {
     }
 
 }).create();
+
 /*************************************************************************************************************/  
-});
+//});

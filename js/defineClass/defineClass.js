@@ -1,5 +1,5 @@
 ﻿//; var defineClass = (function () {
-define(function() {
+//define(function() {
     // 判断IE版本，IE8及其以下版本是不支持defineProperty的
     if (typeof(navigator) != "undefined" && new RegExp("MSIE (\\d+\\.\\d+);").test(navigator.userAgent) && parseFloat(RegExp["$1"]) < 9) {
         throw new Error("The version less than IE9 is not supported");
@@ -168,8 +168,8 @@ define(function() {
         }
     }
 
-    return defineClass;
-});
+    module.exports = defineClass;
+//});
 //})();
 
 //if(typeof module != "undefined") module.exports = defineClass;
